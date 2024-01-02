@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Include Toastr CSS and JS files from CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+  <script type="text/javascript">
+    emailjs.init('ULQJBThZ_jB8sgOAf')
+  </script>
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/852.png" style="border-radius:20px; object-fit: cover; object-position: center; "
+            alt="Vatsal Panchani">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Vatsal Panchani">Vatsal Panchani</h1>
+          <a target="_blank"
+            href="https://www.canva.com/design/DAFzBPIwhNE/VwlkSLtEc8f1cGpABUjiog/view?utm_content=DAFzBPIwhNE&utm_campaign=designshare&utm_medium=link&utm_source=editor"
+            download="">
+            <p class="title" style="padding: 10px; font-size: 16px !important;">View Resume</p>
+          </a>
+
+
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"
+                class="contact-link">vatsalpanchani44@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="https://contacts.google.com/" target="_blank" class="contact-link">74870 06211</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1982-06-23">Oct 30, 2004</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+              <a href="https://maps.app.goo.gl/77use6vCzRuW7TQz5" target="_blank">
+
+                <address>Mota Varachha, Surat, Gujarat</address>
+              </a>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://github.com/VATSALPANCHANIJ" target="_blank" class="social-link">
+              <ion-icon class="socials-icons" name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/vatsal-panchani-557302245/" target="_blank" class="social-link">
+              <ion-icon class="socials-icons" name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+    </aside>
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Recently completed an intensive front-end development course, gaining proficiency in HTML, CSS, JavaScript,
+            and popular front-end frameworks. Eager to apply this new skill set to create engaging and user-friendly web
+            experiences.
+          </p>
+        </section>
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web design</h4>
+
+                <p class="service-item-text">
+                  The most modern and high-quality design made at a professional level.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
+
+                <p class="service-item-text">
+                  High-quality development of sites at the professional level.
+                </p>
+              </div>
+
+            </li>
+          </ul>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Shree Swaminarayan Gurukul Rajkot Sansthan - Taravada</h4>
+
+              <span>2019 — 2022</span>
+
+              <p class="timeline-text">
+                10th - 2019-2020 <br>
+                12th Commerce - 2021-2022 <br>
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Red & White Multimedia Education</h4>
+
+              <span>2022 — 2023</span>
+
+              <p class="timeline-text">
+                Front End Developed
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Bhagwan Mahavir University</h4>
+
+              <span>2022 — 2025 Running...</span>
+
+              <p class="timeline-text">
+                Bachelor of Computer Applications (B.C.A)
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+        <div class="modal-container" data-modal-container>
+          <div class="overlay" data-overlay></div>
+          <section class="testimonials-modal">
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+          </section>
+
+        </div>
+
+      </article>
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio"><button class="filter-select" data-select></button></article>
+
+
+
+      <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="https://github.com/VATSALPANCHANIJ/React_final_project" target="_blank">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.png" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">React js</p>
+
+                    <span class="dot"></span>
+
+
+                  </div>
+
+                  <h3 class="h3 blog-item-title">E-commerce website</h3>
+
+                  <p class="blog-text">
+                    Developed a dynamic e-commerce platform using React.js for buying and selling a wide range of
+                    products including vegetables, fruits, and juices. Implemented various functionalities to enhance
+                    user experience and manage product inventory efficiently.
+                  </p>
+
+                </div>
+              </a>
+            </li>
+            <li class="blog-post-item">
+              <a href="https://github.com/panchanivatsal/React_PR-8" target="_blank">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-3.png" alt="Design digest #80" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">React js</p>
+
+                    <span class="dot"></span>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Movie Application</h3>
+
+                  <p class="blog-text">
+                    To elevate your movie application, integrate a movie database API for real-time movie data
+                    retrieval, using tools like axios for asynchronous calls. Enhance user interaction by implementing
+                    dynamic filters for sorting based on genres, release years, and ratings
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://github.com/panchanivatsal/PR--11-Admin-panel" target="_blank">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-2.png" alt="Best fonts every designer" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">JavaScript</p><span class="dot"></span>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Fast-Food Website</h3>
+
+                  <p class="blog-text">
+                    My food website powered by JavaScript, The website should seamlessly handle food data, provide a
+                    robust cart system with features like total calculation, subtotal tracking, and tax estimation, as
+                    well as offer a streamlined order system.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+
+            <li class="blog-post-item">
+              <a href="https://github.com/VATSALPANCHANIJ/Home-_Web_Bootstrap" target="_blank">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-4.png" alt="UI interactions of the week" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">HTML, CSS, Bootstrap-5</p>
+
+                    <span class="dot"></span>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Perfect Home</h3>
+
+                  <p class="blog-text">
+                    Simple HTML, CSS, and Bootstrap Website
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://github.com/panchanivatsal/Mega_Hosting" target="_blank">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-5.png" alt="The forgotten art of spacing" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">HTML, CSS, Bootstrap-5</p>
+
+                    <span class="dot"></span>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Mag_Hosting</h3>
+
+                  <p class="blog-text">
+                    Simple HTML, CSS, and Bootstrap Website
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://github.com/panchanivatsal/Apple-web_SCSS" target="_blank">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-6.png" alt="Design digest #79" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">HTML, CSS, SASS</p>
+
+                    <span class="dot"></span>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Apple Website</h3>
+
+                  <p class="blog-text">
+                    Simple HTML, CSS, and SASS Website
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+      <!--
+        - #CONTACT
+      -->
+      <article class="contact" data-page="contact">
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11698.917214056552!2d72.8617773673828!3d21.237355840856562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sin!4v1701338977201!5m2!1sen!2sin"
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </figure>
+        </section>
+        <h3 class="h3 form-title">Contact Form</h3>
+        <form id="form" class="form">
+          <div class="input-wrapper">
+            <input type="text" id="from_name" class="form-input" name="to_name" placeholder="Full name">
+            <input type="email" id="email_id" class="form-input" name="email_id" placeholder="Email Message">
+          </div>
+          <div class="field">
+            <textarea class="form-input" id="message" name="message" placeholder="Your Message"></textarea>
+          </div>
+
+          <button class="form-btn" type="submit" id="button">
+            <ion-icon name="paper-plane"></ion-icon>
+            <span>Send Message</span>
+          </button>
+        </form>
+        </section>
+      </article>
+    </div>
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/emailscript.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+
+</body>
+
+</html>
